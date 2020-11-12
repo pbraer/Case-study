@@ -1,7 +1,7 @@
 # Case-study #2
-# Developers:   Braer P. (%),
-#               Kokorina D. (%),
-#               Novoselov V. (%)
+# Developers:   Braer P. (35%),
+#               Kokorina D. (35%),
+#               Novoselov V. (35%)
 
 subject = input('Семейный статус? ').lower()
 
