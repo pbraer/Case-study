@@ -1,13 +1,11 @@
 # Case-study #2
 # Developers:   Braer P. (%),
 #               Kokorina D. (%),
-#               Vasily N. (%)
-
+#               Novoselov V. (%)
 
 subject = input('Семейный статус? ').lower()
 
-#для одного субъекта
-if subject == 'один субъект':
+if subject == 'один субъект' or 'субъект':
     d1 = 0
     d2 = 9076
     d3 = 36901
@@ -16,21 +14,34 @@ if subject == 'один субъект':
     d6 = 405101
     d7 = 406751
 
-elif subject == 'семейная пара':
-    print()
-elif subject == 'родитель-одиночка':
-    print()
+elif subject == 'супружеская пара' or 'семейная пара':
+    d1 = 0
+    d2 = 18151
+    d3 = 73801
+    d4 = 148851
+    d5 = 226851
+    d6 = 405101
+    d7 = 457601
+
+elif subject == 'родитель-одиночка' or 'родитель одиночка':
+    d1 = 0
+    d2 = 12951
+    d3 = 49401
+    d4 = 127551
+    d5 = 206601
+    d6 = 405101
+    d7 = 432201
 
 name_month = ['JAN', 'FAB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC']
-question='Доход:'
+question = 'Revenue for'
 annual_income = 0
 for month in range(12):
     print('{} {}:'.format(question,name_month[month], end=''))
     income = float(input())
     annual_income += income
-print(annual_income)
-
-nalv=input("Налоговый вычет: ")
+annual_income = int(annual_income)
+nalv = int(input("Налоговый вычет: "))
+d = annual_income-nalv  #доход-налоговый вычет -> сумма, с которой брать налог
 
 s1 = 0.1
 s2 = 0.15
@@ -51,16 +62,16 @@ n6 = s1 * (d2 - d1) + s2 * (d3 - d2) + s3 * (d4 - d3) + s4 * (d5 - d4) + s5 * (d
 n7 = s1 * (d2 - d1) + s2 * (d3 - d2) + s3 * (d4 - d3) + s4 * (d5 - d4) + s5 * (d6 - d5) + s6 * (d7 - d6) + s7 * (d - d7)
 
 if d1 < d < d2-1:
-    print(n1)
+    print(round(n1,2))
 elif d2 < d < d3 - 1:
-    print(n2)
+    print(round(n2,2))
 elif d3 < d < d4 - 1:
-    print(n3)
+    print(round(n3, 2))
 elif d4 < d < d5 - 1:
-    print(n4)
+    print(round(n4, 2))
 elif d5 < d < d6 - 1:
-    print(n5)
+    print(round(n5, 2))
 elif d6 < d < d7 - 1:
-    print(n6)
+    print(round(n6, 2))
 elif d7 < d:
-    print(n7)
+    print(round(n7, 2))
