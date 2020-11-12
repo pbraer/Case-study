@@ -19,7 +19,7 @@ for month in range(12):
     income = float(input())
     annual_income += income
 print(annual_income)
-d=d-nalv
+d=annual_income-nalv #доход-налоговый вычет -> сумма, с которой брать налог
 n1 = s1 * (d - d1)
 n2 = s1 * (d2 - d1) + s2 * (d - d2)
 n3 = s1 * (d2 - d1) + s2 * (d3 - d2) + s3 * (d - d3)
@@ -41,4 +41,4 @@ elif subject=='родитель-одиночка' :
     d5 = 206601
     d6 = 405101
     d7 = 432201
-    if d
+    if d-
