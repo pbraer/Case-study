@@ -26,17 +26,17 @@ d5 = 226851
 d6 = 405101
 d7 = 457601
 
-if d1 < d < d2 - 1:
-    print(n1)
+if d1 < d < d2-1:
+    print(round(n1,2))
 elif d2 < d < d3 - 1:
-    print(n2)
+    print(round(n2,2))
 elif d3 < d < d4 - 1:
-    print(n3)
+    print(round(n3, 2))
 elif d4 < d < d5 - 1:
-    print(n4)
+    print(round(n4, 2))
 elif d5 < d < d6 - 1:
-    print(n5)
+    print(round(n5, 2))
 elif d6 < d < d7 - 1:
-    print(n6)
+    print(round(n6, 2))
 elif d7 < d:
-    print(n7)
+    print(round(n7, 2))
