@@ -19,6 +19,7 @@ for month in range(12):
     income = float(input())
     annual_income += income
 print(annual_income)
+d=d-nalv
 n1 = s1 * (d - d1)
 n2 = s1 * (d2 - d1) + s2 * (d - d2)
 n3 = s1 * (d2 - d1) + s2 * (d3 - d2) + s3 * (d - d3)
@@ -29,7 +30,15 @@ n7 = s1 * (d2 - d1) + s2 * (d3 - d2) + s3 * (d4 - d3) + s4 * (d5 - d4) + s5 * (d
 subject=input('Семейный статус? ').lower()
 #для одного субъекта
 if subject=='один субъект' :
-    ////////=='семейная пара' :
+    ////////
+elif subject=='семейная пара' :
     ////////////
 elif subject=='родитель-одиночка' :
-    /////////
+    d1 = 0
+    d2 = 12951
+    d3 = 49401
+    d4 = 127551
+    d5 = 206601
+    d6 = 405101
+    d7 = 432201
+    if d
