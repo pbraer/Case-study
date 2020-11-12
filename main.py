@@ -28,9 +28,8 @@ for month in range(12):
     income = float(input())
     annual_income += income
 print(annual_income)
-d=annual_income-nalv #доход-налоговый вычет -> сумма, с которой брать налог
 nalv=input("Налоговый вычет: ")
-
+d=annual_income-nalv #доход-налоговый вычет -> сумма, с которой брать налог
 s1 = 0.1
 s2 = 0.15
 s3 = 0.25
