@@ -26,7 +26,7 @@ d5 = 226851
 d6 = 405101
 d7 = 457601
 
-if d1 < d < d2-1:
+if d1 < d < d2 - 1:
     print(round(n1,2))
 elif d2 < d < d3 - 1:
     print(round(n2,2))
