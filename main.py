@@ -12,3 +12,11 @@ for month in range(12):
     income = float(input())
     annual_income += income
 print(annual_income)
+s1=0.1
+s2=0.15
+s3=0.25
+s4=0.28
+s5=0.33
+s6=0.35
+s7=0.396
+nalv=input("Налоговый вычет: ")
