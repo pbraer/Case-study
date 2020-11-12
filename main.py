@@ -25,3 +25,18 @@ d4 = 148851
 d5 = 226851
 d6 = 405101
 d7 = 457601
+
+if d1 < d < d2 - 1:
+    print(n1)
+elif d2 < d < d3 - 1:
+    print(n2)
+elif d3 < d < d4 - 1:
+    print(n3)
+elif d4 < d < d5 - 1:
+    print(n4)
+elif d5 < d < d6 - 1:
+    print(n5)
+elif d6 < d < d7 - 1:
+    print(n6)
+elif d7 < d:
+    print(n7)
