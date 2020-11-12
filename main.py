@@ -41,7 +41,7 @@ for month in range(12):
     annual_income += income
 annual_income = int(annual_income)
 nalv = int(input("Налоговый вычет: "))
-d = annual_income-nalv  #доход-налоговый вычет -> сумма, с которой брать налог
+d = annual_income-nalv
 
 s1 = 0.1
 s2 = 0.15
@@ -50,8 +50,6 @@ s4 = 0.28
 s5 = 0.33
 s6 = 0.35
 s7 = 0.396
-
-# string constants
 
 n1 = s1 * (d - d1)
 n2 = s1 * (d2 - d1) + s2 * (d - d2)
