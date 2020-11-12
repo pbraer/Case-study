@@ -7,6 +7,9 @@ for month in range(12):
     income = float(input())
     annual_income += income
 print(annual_income)
+nalv = float(input())
+d = income - nalv
+
 n1 = s1 * (d - d1)
 n2 = s1 * (d2 - d1) + s2 * (d - d2)
 n3 = s1 * (d2 - d1) + s2 * (d3 - d2) + s3 * (d - d3)
