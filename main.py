@@ -1,7 +1,7 @@
 # Case-study #2
 # Developers:   Braer P. (%),
 #               Kokorina D. (%),
-#               Vasily S. (%)
+#               Vasily N. (%)
 
 # string constants
 name_month = [JAN, FAB, MAR, APR, MAY, JUN, JUL, AUG, SEP, OCT, NOV, DEC]
